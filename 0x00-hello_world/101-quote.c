@@ -1,10 +1,10 @@
 #include <stdio.h>
 #include <unistd.h>
 
-/*
- * main - Entry point
+/**
+ * main - print quote
  *
- * Description: 'main is the entry point for all c programs'
+ * Description: 'print dora's quote'
  *
  * Return: Always 1 (success)
  */
