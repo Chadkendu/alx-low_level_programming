@@ -7,7 +7,7 @@
  *
  * Result: Always 0 (success)
  *
- * */
+ */
 
 int main(void)
 
