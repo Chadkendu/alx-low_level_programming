@@ -1,7 +1,13 @@
 #include <stdio.h>
 
-int main()
+/*
+ * main function is a integer function
+ * it is used as an entry point for all C program
+ * */
+
+int main(void)
 {
-	puts("Programming is like building a multilingual puzzle");
-	return 0;
+	puts("Programming is like building a multilingual puzzle);
+
+	return(0);
 }
