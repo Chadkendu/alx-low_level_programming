@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /*
- * main: Entry point
+ * main - Entry point
  *
  * Description: 'main is the entry point of the c program'
  *
@@ -10,7 +10,6 @@
  */
 
 int main(void)
-
 {
 	printf("with proper grammar, but the outcome is a piece of art,\n");
 
