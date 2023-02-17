@@ -12,9 +12,9 @@
 
 int main(void)
 {
-	char alphabet;
-	for (alphabet = 'a'; alphabet <= 'z'; alphabet++)
-			putchar(alphabet);
+	char low;
+	for (low = 'a'; low <= 'z'; low++)
+			putchar(low);
 			printf("\n");
 	return (0);
 }	
