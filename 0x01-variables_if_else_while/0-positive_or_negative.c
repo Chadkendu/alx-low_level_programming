@@ -2,7 +2,8 @@
 #include <time.h>
 #include <stdio.h>
 
-/* main - 0-positive_or_negative.c
+/**
+ * main - 0-positive_or_negative.c
  *
  * Description: This is the code for random numbers generating using the seed rand keyword(srand) and rand
  *
