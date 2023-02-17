@@ -12,7 +12,9 @@
 
 int main(void)
 {
-	char alphabet[] = ("a..z");
-	putchar("%s\n", alphabet);
+	char alphabet;
+	for (alphabet = 'a'; alphabet <= 'z'; alphabet++)
+			putchar(alphabet);
+			printf("\n");
 	return (0);
 }	
