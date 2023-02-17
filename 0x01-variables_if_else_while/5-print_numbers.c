@@ -14,10 +14,11 @@
 
 int main(void)
 {
-	int numbers;
+	int n;
 
-	for (numbers = 0; numbers < 10; numbers++)
-	       putchar(numbers);
-	printf("\n");
+	while (n < 10)
+	{
+		putchar(n);
+		n = n++;
 	return (0);
 }
