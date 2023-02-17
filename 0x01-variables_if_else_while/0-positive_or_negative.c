@@ -5,7 +5,7 @@
 /**
  * main - 0-positive_or_negative.c
  *
- * Description: This is the code for random numbers generating using the seed rand keyword(srand) and rand
+ * Description: This is the code for random numbers generating
  *
  * Return: Always 0 (success)
  */
@@ -16,7 +16,6 @@ int main(void)
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	
 	if (n > 0)
        	{
 		printf("%i is positive\n", n);
