@@ -13,12 +13,11 @@
 
 int main(void)
 {
-	int low;
+	int ldw;
 
-	for (low = '0'; low <= '9'; low++)
+	for (ldw = '0'; ldw <= '9'; ldw++)
 	{
-		putchar(low);
-
+		putchar(ldw);
 		if (d != 9)
 		{
 			putchar(',');
