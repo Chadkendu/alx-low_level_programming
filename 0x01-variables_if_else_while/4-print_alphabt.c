@@ -22,6 +22,7 @@ int main(void)
 	{
 		if (low != e && low != q)
 			putchar(low);
+	}
 	printf("\n");
 	return (0);
 }
