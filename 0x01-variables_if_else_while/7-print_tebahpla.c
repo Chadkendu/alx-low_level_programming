@@ -15,7 +15,7 @@ int main(void)
 {
 	char box;
 
-	for (box = 'z'; box >= 'a'; box--);
+	for (box = 'z'; box >= 'a'; box--)
 			putchar(box);
 			putchar('\n');
 	return (0);
