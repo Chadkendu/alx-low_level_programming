@@ -15,7 +15,7 @@ int main(void)
 {
 	int low;
 
-	for (low = '0,'; low <= '9'; low++)
+	for (low = '0'; low <= '9'; low++)
 	{
 		putchar(low);
 
