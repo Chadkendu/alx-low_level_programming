@@ -9,7 +9,7 @@
  * in the c program for the project
  * main is the entry point
  *
- * return: Always 0 (success)
+ * Return: Always 0 (success)
  *
  */
 
