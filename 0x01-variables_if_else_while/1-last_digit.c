@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
- * main - 1-last_digit.c
+ * main - entry point
  *
  * Description: srand generate random seed numbers
  * in the c program for the project
