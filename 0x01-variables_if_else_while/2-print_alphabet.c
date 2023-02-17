@@ -3,20 +3,16 @@
 #include <time.h>
 
 /**
- * main - entry point
+ * main - Entry point
  *
- * Description: main is the entry point for all c program
- * we are printing all the alphabet in lowercase
- *
- * Return: Always 0 (success)
- *
+ * Return: Alway 0 (Success)
  */
-
 int main(void)
 {
-	char low = 'a';
+	char low;
+
 	for (low = 'a'; low <= 'z'; low++)
-			putchar(low);
-			printf("\n");
+		putchar(low);
+	printf("\n");
 	return (0);
-}	
+}
