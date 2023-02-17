@@ -22,4 +22,4 @@ int main(void)
 		putchar(high);
 	printf("\n");
 	return (0);
-}	
+}
