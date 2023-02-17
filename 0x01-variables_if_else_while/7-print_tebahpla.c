@@ -17,6 +17,6 @@ int main(void)
 
 	for (box = 'z'; box >= 'a'; box--);
 			putchar(box);
-			putchar("\n");
+			putchar('\n');
 	return (0);
 }
