@@ -13,14 +13,15 @@
 
 int main(void)
 {
-	char low;
+	char low,e,q;
+	
+	e = 'e';
+	q = 'q';
 
 	for (low = 'a'; low <= 'd'; low++)
-		putchar(low);
-	for (low = 'f'; low <= 'p'; low++)
-		putchar(low);
-	for (low = 'r'; low <= 'z'; low++)
-		putchar(low);
+	{
+		if (low != e && low != q)
+			putchar(low);
 	printf("\n");
 	return (0);
 }
