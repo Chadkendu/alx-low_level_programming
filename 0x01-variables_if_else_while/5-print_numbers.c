@@ -15,10 +15,10 @@
 int main(void)
 {
 	int n;
+	n = n++;
 
-	while (n < 10)
+	if (n < 10)
 	{
-		putchar(n);
-		n = n++;
+		printf("%d\n", n);
 	return (0);
 }
