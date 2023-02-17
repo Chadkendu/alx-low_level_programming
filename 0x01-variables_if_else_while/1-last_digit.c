@@ -5,7 +5,9 @@
 /**
  * main - 1-last_digit.c
  *
- * Description: srand for random numbers
+ * Description: srand generate random seed numbers
+ * in the c program for the project
+ * main is the entry point
  *
  * return: Always 0 (success)
  *
