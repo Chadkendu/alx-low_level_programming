@@ -13,10 +13,10 @@
 
 int main(void)
 {
-	char a;
+	char box;
 
-	for (a = '0'; a >= 'z'; a--);
-			putchar(a);
+	for (box = 'a'; box >= 'z'; box--);
+			putchar(box);
 			putchar("\n");
 	return (0);
 }
