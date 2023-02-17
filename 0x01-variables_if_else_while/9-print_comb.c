@@ -3,22 +3,18 @@
 #include <time.h>
 
 /**
- * main - entry point
+ * main - Entry point
  *
- * Description: a program that prints all possible combinations of single-digit numbers.
- *
- * Return: Always 0 (success)
- *
+ * Return: Always 0 (Success)
  */
-
 int main(void)
 {
-	int ldw;
+	int d;
 
-	for (ldw = '0'; ldw <= '9'; ldw++)
+	for (d = '0'; d <= '9'; d++)
 	{
-		putchar(ldw);
-		if (d != 9)
+		putchar(d);
+		if (d != '9')
 		{
 			putchar(',');
 			putchar(' ');
