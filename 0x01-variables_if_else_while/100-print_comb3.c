@@ -1,38 +1,24 @@
-i#include <stdio.h>
-/**
- * main-program entry point
- * Return: 0 success, non zero fail
- */
+#include <stdio.h>
 int main(void)
 {
-	int i, k = '0', j;
+	int int1, int2;
 
-	for (i = '0'; i <= '9'; i++)
+	for (int1 = 0; int1 < 10; int1++)
 	{
-		for (j = k; j <= '9'; j++)
+		for (int2 = 0; int2 < 10; int2++)
 		{
-			if (i != j)
-			{
-				putchar(i);
-				putchar(j);
-			}
-			if (i == j)
-			{
+			putchar((int1 % 10) + '0');
+			putchar((int2 % 10) + '0');
+
+			if (int1 == 9 && int2 == 9)
 				continue;
-			}
-			if (i == '8' && j == '9')
-			{
-				break;
-			}
-			else
-			{
-				putchar(',');
-				putchar(' ');
-			}
+			
+			putchar(',');
+			putchar(' ');
 		}
-		k++;
 	}
+
 	putchar('\n');
+
 	return (0);
 }
-
