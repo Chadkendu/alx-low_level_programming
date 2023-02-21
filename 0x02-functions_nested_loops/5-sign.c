@@ -1,11 +1,9 @@
 #include "main.h"
 
 /**
- * _print_sign - prints the sign of a number
+ * print_sign - prints the sign of a number
  *
  * Description: a function that prints the sign of a number.
- *
- * @c : character to check for a number
  *
  * Return: Always 0 or 1 (success)
  *
