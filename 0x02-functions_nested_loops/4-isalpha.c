@@ -5,7 +5,7 @@
  *
  * Description: a function that checks for alphabetic character.
  *
- * @c - character to check the case
+ * @c : character to check the case
  *
  * Return: Always 0 or 1 (success)
  *
