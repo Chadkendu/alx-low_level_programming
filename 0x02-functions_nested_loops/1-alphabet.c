@@ -9,13 +9,13 @@
  *
  */
 
-int main(void)
+void print_alphabet(void)
 {
-	int a;
-	for (a == 'a'; a <= 'z'; a++)
+	char an = 'a';
+	while (an <= 'z')
 	{
-		_putchar (a);
-		_putchar ('\n');
+		_putchar (an);
+		an++;
 	}
-	return (0);
+	_putchar ('\n');
 }
