@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * main - Entry point
+ * print_alphabet - Entry point
  *
- * Description: Write a function that prints the alphabet, in lowercase, followed by a new line.
+ * Description: a function that prints the alphabet, in lowercase, followed by a new line.
  *
  * Return: Always 0 (success)
  *
@@ -11,11 +11,14 @@
 
 void print_alphabet(void)
 {
-	char an = 'a';
-	while (an <= 'z')
+	char parv = 'a';
+
+	while (parv <= 'z')
 	{
-		_putchar (an);
-		an++;
+		_putchar(parv);
+		parv++;
+
 	}
-	_putchar ('\n');
+	_putchar('\n');
+
 }
