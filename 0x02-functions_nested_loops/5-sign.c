@@ -5,6 +5,8 @@
  *
  * Description: a function that prints the sign of a number.
  *
+ * @n : number to check
+ *
  * Return: Always 0 or 1 (success)
  *
  */
