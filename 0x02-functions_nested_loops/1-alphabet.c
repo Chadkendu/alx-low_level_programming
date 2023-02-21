@@ -1,5 +1,4 @@
-#ifndef main_h
-#define main_h
+#include "main.h"
 
 /**
  * print_alphabet - Entry point
