@@ -20,7 +20,7 @@ int print_sign(int n)
 		parv = 1;
 		_putchar ('+');
 	}
-	else if (n < 0)
+	else if (n == 0)
 	{
 		parv = 0;
 		_putchar ('0');
