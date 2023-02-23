@@ -4,7 +4,8 @@
  * mul - multiplies two numbers a and b
  *
  * Description: Write a function that multiplies two integers a and b.
- * @c: character to check
+ * @a: character to multiply
+ * @b: character to multiply
  *
  * Return: Always 0 (success)
  *
