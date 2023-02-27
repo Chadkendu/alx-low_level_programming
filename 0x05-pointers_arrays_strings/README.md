@@ -1,6 +1,6 @@
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=900&pause=1000&width=435&lines=C+POINTERS%2C+ARRAYS+AND+STRINGS)](https://git.io/typing-svg)
 
-ALX project on c pointers strings and arrays
+DETAILS
 1. Write a function that takes a pointer to an int as parameter and updates the value it points to to 98.
 2. Write a function that swaps the values of two integers.
 3. Write a function that returns the length of a string.
