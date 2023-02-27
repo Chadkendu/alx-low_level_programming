@@ -1,3 +1,5 @@
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=25&pause=1000&color=00C7F7&width=435&lines=HELLO+WORLD+!!)](https://git.io/typing-svg)
+
 This is the C programming project 
 1. Write a script that runs a C file through the preprocessor and save the result into another file.
 2. Write a script that compiles a C file but does not link.
