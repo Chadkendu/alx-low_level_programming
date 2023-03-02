@@ -2,10 +2,10 @@
 
 /**
  * _strncat - concatenates two strings,
- * @dest: destination.
+ * @dest: destination path.
  * @src: source.
- * @n: amount of bytes used from src.
- * Return: the pointer to dest.
+ * @n: amount of bytes from src.
+ * Return: the pointer to destination.
  */
 
 char *_strncat(char *dest, char *src, int n)
