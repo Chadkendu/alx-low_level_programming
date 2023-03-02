@@ -6,5 +6,5 @@ c variables, if, else, while - Project 2
 c functions and nested loops - Project 3
 c debugging - Project 4
 c more functions and nested loops - Project 5
-c pointers and arrays and strings - Project 6
-
+c pointers, arrays and strings - Project 6
+c more pointers, arrays and strings - Project 7
