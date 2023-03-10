@@ -2,12 +2,10 @@
 #include "main.h"
 
 /**
- * main - Entry point
- *
- * Description: Write a program that prints its own name
- *
- * return: Always 0 (success)
- *
+ * main - Prints the name of the program
+ * @argc: Number of command line arguments
+ * @argv: Array name
+ * Return: 0
  */
 
 int main(int argc, char *argv[])
