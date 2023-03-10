@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * _strchr -locates a character in a string
  * @s: string
@@ -7,7 +6,6 @@
  *
  * Return: pointer to s or null if not found
  */
-
 char *_strchr(char *s, char c)
 {
 	int index;
