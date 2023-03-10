@@ -11,3 +11,4 @@ c pointers, arrays and strings - Project 6
 c more pointers, arrays and strings - Project 7
 c Even more pointers, arrays and strings - Project 8
 C - Recursion - Project 9
+c static libaries - Project 10
