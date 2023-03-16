@@ -12,3 +12,5 @@ c more pointers, arrays and strings - Project 7
 c Even more pointers, arrays and strings - Project 8
 C - Recursion - Project 9
 c static libaries - Project 10
+c malloc | free - Project 11
+c  more malloc - Project 12
