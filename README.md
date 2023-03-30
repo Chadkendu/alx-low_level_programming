@@ -13,4 +13,8 @@ c Even more pointers, arrays and strings - Project 8
 C - Recursion - Project 9
 c static libaries - Project 10
 c malloc | free - Project 11
-c  more malloc - Project 12
+c more malloc - Project 12
+c structure and typedef - Project 13
+c functions pointers - Project 14
+c Variadic functions - Project 15
+c Singly linked lists - Project 16
