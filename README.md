@@ -33,3 +33,9 @@
     c Variadic functions - Project 15
 
     c Singly linked lists - Project 16
+
+    c more singly linked list - Project 17
+
+    c bit manipulation - Project 18
+
+    c file/io - Project 19
