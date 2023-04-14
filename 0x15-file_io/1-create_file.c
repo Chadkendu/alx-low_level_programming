@@ -1,6 +1,7 @@
 #include "main.h"
 
 /**
+ * Auth: Joshua Ajayi
  * create_file - create a file with read/write access for user
  * @filename: name of file to create
  * @text_content: string to write to file
