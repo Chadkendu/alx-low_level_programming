@@ -3,8 +3,13 @@
 
 /**
  * set_bit - sets the value of a bit to 1 at a given index
+ *
+ * description - a function that sets the vlue of a bit to 1
+ * 
  * @n: parameter
+ * 
  * @index: index
+ * 
  * Return: value
  */
 
