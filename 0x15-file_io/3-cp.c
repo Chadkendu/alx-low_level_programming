@@ -5,6 +5,7 @@
 #define SE STDERR_FILENO
 
 /**
+ * Auth: Joshua Ajayi
  * main - create the copy bash script
  * @ac: argument count
  * @av: arguments as strings
