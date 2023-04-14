@@ -3,8 +3,13 @@
 
 /**
  * clear_bit - sets the value of a bit to 0 at a given index
+ * 
+ * description- a function that sets the value of a bit to 0
+ *
  * @n: parameter
+ * 
  * @index: index
+ * 
  * Return: 1 if works, -1 if error
  */
 
