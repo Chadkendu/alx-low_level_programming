@@ -3,8 +3,13 @@
 /**
  * flip_bits - number of bits you would need to flip
  * to get from one number to another
+ * 
+ * description - a function that gets the number of bits
+ *
  * @n: parameter
+ * 
  * @m: destiny
+ * 
  * Return: nflips
  */
 
