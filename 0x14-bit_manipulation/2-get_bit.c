@@ -2,8 +2,13 @@
 
 /**
  * get_bit - value of a bit at a given index
+ *
+ * description - a function that get the value of a bit
+ *
  * @n: decimal parameter
+ * 
  * @index: index
+ * 
  * Return: val
  */
 
