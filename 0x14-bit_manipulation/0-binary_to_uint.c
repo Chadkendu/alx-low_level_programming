@@ -1,15 +1,15 @@
 #include "main.h"
 
 /**
- * binStrToUnit - converts a binary number to unsigned integer
+ * binary_to_uint - converts binary number-unsigned integer
  *
  * Description:
- * @binStr: string with the binary number
+ * @b: string with the binary number
  *
  * Return: converted number
  */
 
-unsigned int binary_to_unit(const char *b)
+unsigned int binary_to_uint(const char *b)
 {
 	int a;
 	unsigned int decimalVal = 0;
