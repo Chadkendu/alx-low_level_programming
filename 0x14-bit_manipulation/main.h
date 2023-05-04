@@ -4,7 +4,7 @@
 #define BYTE_LENGHT 8
 
 int _putchar(char c);
-unsigned int binStrToUnit(const char *a);
+unsigned int binary_to_unit(const char *b);
 void binary_print(unsigned long int w);
 int acq_bit(unsigned long int w, unsigned int index);
 int alloc_bit(unsigned long int *w, unsigned int index);

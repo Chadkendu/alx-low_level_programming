@@ -9,19 +9,19 @@
  * Return: converted number
  */
 
-unsigned int binStrToUnit(const char *binStr)
+unsigned int binary_to_unit(const char *b)
 {
-	int b;
+	int a;
 	unsigned int decimalVal = 0;
 
-	if (!binaryStr)
+	if (!b)
 		return (0);
 
-	for (b = 0; binaryStr[b]; b++)
+	for (a = 0; b[a]; a++)
 	{
-		if (binaryStr[b] < '0' || binaryStr[b] > '1')
+		if (b[a] < '0' || b[a] > '1')
 			return (0);
-		decimalVal = 2 * decimalVal + (binaryStr[b] - '0');
+		decimalVal = 2 * decimalVal + (b[a] - '0');
 	}
 	return (decimalVal);
 }
