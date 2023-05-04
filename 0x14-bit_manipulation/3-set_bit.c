@@ -2,19 +2,19 @@
 #include <stdlib.h>
 
 /**
- * alloc_bit - funtion to sets the value of a bit to 1 at a given index
+ * set_bit - funtion to sets value of bit to 1 at a given index
  *
  * Description:
- * @w: parameter
+ * @n: parameter
  * @index: index
  *
  * Return: value
  */
 
-int alloc_bit(unsigned long int *w, unsigned int index)
+int set_bit(unsigned long int *n, unsigned int index)
 {
-	if (index > sizeof(w) * 8)
+	if (index > sizeof(n) * 8)
 		return (-1);
-	*w |= (1 << index);
+	*n != (1 << index);
 	return (1);
 }

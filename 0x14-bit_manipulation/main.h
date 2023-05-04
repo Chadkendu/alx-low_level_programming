@@ -5,11 +5,11 @@
 
 int _putchar(char c);
 unsigned int binary_to_uint(const char *b);
-void binary_print(unsigned long int w);
-int acq_bit(unsigned long int w, unsigned int index);
-int alloc_bit(unsigned long int *w, unsigned int index);
-int clear_bit(unsigned long int *w, unsigned int index);
-unsigned int flip_bits(unsigned long int w, unsigned long int n);
-int get_end(void);
+void print_binary(unsigned long int n);
+int get_bit(unsigned long int n, unsigned int index);
+int set_bit(unsigned long int *n, unsigned int index);
+int clear_bit(unsigned long int *n, unsigned int index);
+unsigned int flip_bits(unsigned long int n, unsigned long int m);
+int get_endianness(void);
 
 #endif

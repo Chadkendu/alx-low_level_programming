@@ -1,22 +1,22 @@
 #include "main.h"
 
 /**
- * binary_print - function to print binary representation of a number
+ * print_binary - function to print binary repr of a number
  *
  * Description:
- * @w: parameter
+ * @n: parameter
  *
  * Return: void
  */
 
-void binary_print(unsigned long int w)
+void print_binary(unsigned long int n)
 {
 	int b, count = 0;
 	unsigned long int present;
 
 	for (b = 63; b >= 0; b--)
 	{
-		present = w >> b;
+		present = n >> b;
 
 		if (present & 1)
 		{
