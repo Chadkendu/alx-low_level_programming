@@ -1,15 +1,15 @@
 #include "main.h"
 
 /**
- * get_endianness - checks the endianness
- * 
- * Return: 0 if big endian, and 1 if little endian
+ * get_end - checks the end
+ *
+ * Return: 0 if large endian, and 1 if small endian
  */
 
-int get_endianness(void)
+int get_end(void)
 {
-	unsigned int i = 1;
-	char *c = (char *) &i;
+	unsigned int b = 1;
+	char *d = (char *) &b;
 
-	return (*c);
+	return (*d);
 }

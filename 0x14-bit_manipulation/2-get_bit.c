@@ -1,22 +1,20 @@
 #include "main.h"
 
 /**
- * get_bit - value of a bit at a given index
+ * acq_bit - function to get value of a bit at a given index
  *
- * description - a function that get the value of a bit
- *
- * @n: decimal parameter
- * 
+ * Description:
+ * @w: decimal parameter
  * @index: index
- * 
- * Return: val
+ *
+ * Return: value
  */
 
-int get_bit(unsigned long int n, unsigned int index)
+int acq_bit(unsigned long int w, unsigned int index)
 {
 	int bit;
 
-	bit = (n >> index);
+	bit = (w >> index);
 	if (index > 32)
 	return (-1);
 	return (bit & 1);
