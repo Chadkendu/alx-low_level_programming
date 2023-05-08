@@ -4,36 +4,38 @@
 #include <unistd.h>
 
 /**
- * read_textfile - A text file and prints it to POSIX stdout.
- * @filename: pointer to the name of the file.
- * @letters: Number of letters the function should read and print.
- * Return: number of letters read and printed, or 0 on failure
+ * read_textfile - read text file and prints to POSIX stdout.
+ *
+ * Description:
+ * @fileName: name of file pointer
+ * @letter: letter numbers the function should read and print.
+ *
+ * Return: letter numbers read and printed, or 0 (error)
  */
 
-ssize_t read_textfile(const char *filename, size_t letters)
+ssize_t read_textfile(const char *fileName, size_t letter)
 {
-	ssize_t fd, rd_cnt, wr_count;
-	char *buffer;
+	ssize_t rdCount, wrCount;
+	int fileDir;
+	char *buff;
 
-	if (filename == NULL)
+	if (!fileName)
 		return (0);
 
-	buffer = malloc(sizeof(char) * letters);
-	if (buffer == NULL)
+	buffer = malloc(letter);
+	if (!buff)
 		return (0);
 
-	fd = open(filename, O_RDONLY);
-	rd_cnt = read(fd, buffer, letters);
-	wr_count = write(STDOUT_FILENO, buffer, rd_cnt);
-
-	if (fd == -1 || rd_cnt == -1 || wr_count == -1 || wr_count != rd_cnt)
-	{
-		free(buffer);
+	fileDir = open(fileName, O_RDONLY);
+	if (fileDir == -1)
 		return (0);
-	}
+	rdCount = read(fileDir, buff, letter);
+	wrCount = write(STDOUT_FILENO, buff, rdCount);
 
-	free(buffer);
-	close(fd);
+	if (wrCount == -1)
+		return (0);
 
-	return (wr_count);
+	free(buff);
+	close(fileDir);
+	return (wrCount);
 }
