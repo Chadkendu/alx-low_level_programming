@@ -7,29 +7,29 @@
  * read_textfile - read text file and prints to POSIX stdout.
  *
  * Description:
- * @fileName: name of file pointer
- * @letter: letter numbers the function should read and print.
+ * @filename: name of file pointer
+ * @letters: letter numbers the function should read and print.
  *
  * Return: letter numbers read and printed, or 0 (error)
  */
 
-ssize_t read_textfile(const char *fileName, size_t letter)
+ssize_t read_textfile(const char *filename, size_t letters)
 {
 	ssize_t rdCount, wrCount;
 	int fileDir;
 	char *buff;
 
-	if (!fileName)
+	if (!filename)
 		return (0);
 
-	buffer = malloc(letter);
+	buffer = malloc(letters);
 	if (!buff)
 		return (0);
 
-	fileDir = open(fileName, O_RDONLY);
+	fileDir = open(filename, O_RDONLY);
 	if (fileDir == -1)
 		return (0);
-	rdCount = read(fileDir, buff, letter);
+	rdCount = read(fileDir, buff, letters);
 	wrCount = write(STDOUT_FILENO, buff, rdCount);
 
 	if (wrCount == -1)
