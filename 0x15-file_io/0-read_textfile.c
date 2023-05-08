@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
+#include <stdlib.h>
 #include <unistd.h>
 
 /**
@@ -7,34 +8,36 @@
  *
  * Description:
  * @filename: file name pointer
- * @letters: letter numbers the function should read and print.
+ * @letters: letter number needed to be read
  *
- * Return: letter number read and printed, or 0 (failure)
+ * Return: letter numbers read and printed, or 0 (failure)
+ *
  */
 
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	ssize_t file, rdCount, wrCount;
-	char *buff;
+	char *buffer;
 
 	if (filename == NULL)
 		return (0);
 
-	buff = malloc(sizeof(char) * letters);
-	if (buff == NULL)
+	buffer = malloc(sizeof(char) * letters);
+	if (buffer == NULL)
 		return (0);
 
 	file = open(filename, O_RDONLY);
-	rdCount = read(fd, buff, letters);
-	wrCount = write(STDOUT_FILENO, buff, rdCount);
+	rdCount = read(file, buffer, letters);
+	wrCount = write(STDOUT_FILENO, buffer, rdCount);
 
 	if (file == -1 || rdCount == -1 || wrCount == -1 || wrCount != rdCount)
 	{
-		free(buff);
+		free(buffer);
 		return (0);
 	}
 
-	free(buff);
+	free(buffer);
 	close(file);
+
 	return (wrCount);
 }
