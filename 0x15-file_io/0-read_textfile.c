@@ -4,38 +4,38 @@
 #include <unistd.h>
 
 /**
- * read_textfile - read text file and prints to POSIX stdout.
+ * read_textfile - A text file and prints it to POSIX stdout.
  *
  * Description:
- * @filename: name of file pointer
+ * @filename: file name pointer
  * @letters: letter numbers the function should read and print.
  *
- * Return: letter numbers read and printed, or 0 (error)
+ * Return: letter number read and printed, or 0 (failure)
  */
 
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	ssize_t rdCount, wrCount;
-	int fileDir;
+	ssize_t file, rdCount, wrCount;
 	char *buff;
 
-	if (!filename)
+	if (filename == NULL)
 		return (0);
 
-	buffer = malloc(letters);
-	if (!buff)
+	buff = malloc(sizeof(char) * letters);
+	if (buff == NULL)
 		return (0);
 
-	fileDir = open(filename, O_RDONLY);
-	if (fileDir == -1)
-		return (0);
-	rdCount = read(fileDir, buff, letters);
+	file = open(filename, O_RDONLY);
+	rdCount = read(fd, buff, letters);
 	wrCount = write(STDOUT_FILENO, buff, rdCount);
 
-	if (wrCount == -1)
+	if (file == -1 || rdCount == -1 || wrCount == -1 || wrCount != rdCount)
+	{
+		free(buff);
 		return (0);
+	}
 
 	free(buff);
-	close(fileDir);
+	close(file);
 	return (wrCount);
 }
