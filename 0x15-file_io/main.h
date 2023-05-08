@@ -17,7 +17,9 @@ int _strlen(char *str);
 
 /**
  * ELF header functions
+ *
 */
+
 void check_elf(unsigned char *e_ident);
 void print_magic(unsigned char *e_ident);
 void print_class(unsigned char *e_ident);
@@ -29,4 +31,4 @@ void print_type(unsigned int e_type, unsigned char *e_ident);
 void print_entry(unsigned long int e_entry, unsigned char *e_ident);
 void close_elf(int elf);
 
-#endif /*MAIN_H */
+#endif
