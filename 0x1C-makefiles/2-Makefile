@@ -1,0 +1,12 @@
+CC=gcc
+NAME=school
+SRC=main.c school.c
+OBJ=$(SRC:.c=.o) # defines the object that correspond file for each source file
+
+all:$(SRC) $(NAME)
+
+# create executable file
+# $@ represents the name of target (executable name)
+# $^ represents the object files of the target
+$(NAME): $(OBJ)
+	$(CC) -o $@ $^
